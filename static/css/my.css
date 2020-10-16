@@ -1,0 +1,120 @@
+/* FONTS */
+@font-face {
+    font-family: 'Din';
+    src: url('/fonts/D-DIN.otf');
+    font-weight: normal;
+    
+  }
+  
+  @font-face {
+    font-family: 'Din';
+    src: url('/fonts/D-DIN-Bold.otf');
+    font-weight: bold;
+    
+  }
+
+.nav-menu #logo img {
+    width: 150px;
+}
+
+.nav-menu {
+    padding: 58px 0;
+}
+
+#logo, #nav {
+    width: fit-content;
+}
+#logo {
+    float: left;
+}
+
+#nav {
+    float: right;
+}
+
+#nav li{
+    width: fit-content;
+    display: inline-block;  
+    margin: 12px 0 12px 20px;
+}
+
+#nav li a {
+    color: #666;
+    text-decoration: none;
+}
+#nav li a:hover {
+    color: black;
+}
+
+#body {
+    margin-top: 5vh;
+}
+
+#body h1 {
+    font-size: 100px;
+    line-height: 100px;
+}
+
+#social {
+    padding-top: 30px;
+}
+#social ul {
+    list-style: none;
+}
+#social ul li {
+    display: inline-block;
+    margin-right: 20px;
+    font-size: .7em;
+    height: 24px;
+    width: 24px;
+    line-height: 24px;
+    background: black;
+    text-align: center;
+    border-radius: 18px;
+}
+
+#social ul li a{
+    color: white;
+}
+
+
+#john-jack-img {
+    border-radius: 50%;
+    
+}
+#john-jack-profile img{
+    width: 120%;
+    
+}
+
+@media only screen and (max-width: 425px) {
+    .nav-menu ul{
+        display: none;
+    }
+    #body h1 {
+        font-size: 66px;
+        line-height: 66px;
+    }
+  }
+
+  @media only screen and (max-width: 710px) {
+    body {
+        background: linear-gradient(to top, white, rgba(255, 255, 255, 0.8)), url(../img/imad-blur.psd.png);
+        background-size: cover;
+        background-position-y: bottom;
+        background-position-x: center;
+        background-repeat: no-repeat;
+    }
+    #john-jack-profile {
+        display: none;
+    }
+    
+  }
+
+  @media only screen and (max-width: 870px) {
+    #body h1 {
+        font-size: 75px;
+        line-height: 75px;
+    }
+    
+  }
