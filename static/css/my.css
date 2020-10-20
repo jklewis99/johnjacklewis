@@ -19,6 +19,17 @@
 
 .nav-menu {
     padding: 58px 0;
+    display: flex;
+    align-items: center;
+    flex-direction: row;
+}
+.nav-menu:last-child {
+    margin-left: auto;
+}
+
+
+.container {
+    padding-bottom: ;
 }
 
 #logo, #nav {
@@ -80,10 +91,11 @@
 
 #john-jack-img {
     border-radius: 50%;
+    width: 100%;
     
 }
 #john-jack-profile img{
-    width: 120%;
+    width: 100%;
     
 }
 
