@@ -1,0 +1,23 @@
+---
+layout: default
+---
+
+<div class="container" id="blog-container">
+    {{content}}
+</div>
+<section class="older-posts-section">
+    <h2>Other Posts</h2>
+    <ul class="older-posts-grid">
+        {% for post in site.posts %} <!-- use offset to print only remaining posts (like python [1:]-->
+        <li class="blogs">
+            <a class="blog-preview-title" href="{{ post.url }}">{{ post.title }}</a>
+            <div class="prevent-overflow">
+                <p class="post__desc">
+                    {{ post.description }}
+                </p>
+            </div>
+            <a class="blog-preview-link" href="{{ post.url }}">Read More</a>
+        </li>
+        {% endfor %}  
+    </ul>
+</section>

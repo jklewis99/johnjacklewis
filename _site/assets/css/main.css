@@ -1,0 +1,328 @@
+body {
+    font-family: 'Lora', serif;
+    margin: 0;
+}
+
+
+/* p, h2, ul {
+    grid-column: 3 / 7;
+} */
+ul {
+    list-style-type: none;
+}
+footer {
+    /* grid-column: 1 / 9; */
+    background: linear-gradient( rgb(0, 0, 0), rgb(76, 77, 82));
+    padding: 2em 0;
+    color: white;
+    text-align: center;
+    display: block;
+    /* line-height: 2em; */
+    font-size: larger;
+}
+footer ul {
+    width: 25%;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-evenly;
+}
+footer ul li a{
+    color: white;
+}
+
+footer img {
+    margin-left: 6vw;
+    float: left;
+    height: 9vh;
+    max-height: 100%;
+}
+h2 {
+    font-family: sans-serif;
+    text-transform: uppercase;
+}
+.container {
+    margin: 0 19vw;
+}
+
+
+.older-posts-section {
+    background: black;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    /* grid-column: 1 / 9; */
+    padding: 2em 0;
+    color: white;
+    /* grid-template-columns: inherit; */
+    /* grid-gap: inherit; */
+    margin-top: 4em;
+}
+.older-posts-grid {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    max-width: 80%;
+    justify-content: space-between;
+    padding: 5px 20px;
+    width: 80%;
+    max-width: 800px;
+}
+.blogs {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    width: 200px;
+    max-width: 33%;
+    max-height: 250px;
+    padding: 10px;
+}
+.older-posts h2, ul{
+    /* grid-column: 2/8; */
+
+}
+
+.prevent-overflow {
+    line-height: normal;
+    
+}
+.post__desc {
+    display: -webkit-box;
+    max-height: 90px;
+    overflow-y: hidden;
+    -webkit-line-clamp: 4;
+    -webkit-box-orient: vertical;
+    text-overflow: ellipsis;
+}
+/* .blog-preview:first-of-type {
+    grid-column: 2 / 4;
+} */
+.blog-preview-title {
+    font-family: sans-serif;
+    font-size: 2.5vw;
+    line-height: 1;
+    color: white;
+    text-decoration: none;
+    text-transform: uppercase;
+    transition: opacity ease-out 200ms;
+    max-height: 90px;
+    /* overflow-y: hidden; */
+}
+.blog-preview-title:hover {
+    opacity: 0.6;
+}
+.blog-preview-link {
+    display: inline-block;
+    align-self: center;
+    padding: 0.5em 1.5em;
+    text-align: center;
+    font-family: sans-serif;
+    color: black;
+    text-decoration: none;
+    background: rgb(146, 214, 253);
+    margin-top: 1em;
+    font-size: 1.0em;
+}
+.blog-preview-link:hover {
+    transition: background ease-out 200ms;
+    background: rgba(67, 171, 255, 0.842);
+}
+
+.nav-bar {
+    height: 150px;
+    display: flex;
+    align-content: center;
+    justify-content: center;
+    margin: 0 50px;
+    padding: 10px;
+}
+.nav-menu #logo img {
+    width: 150px;
+}
+
+.nav-menu {
+    width: 600px;
+    padding: 20px 0;
+    display: flex;
+    align-items: center;
+    flex-direction: row;
+}
+
+.blog-post-header {
+    text-align: center;
+    margin: 40px 0;
+}
+.blog-post-header h1, h2, h3{
+    margin: 0;
+}
+.blog-post-header h2 {
+    text-transform: none;
+    color: rgb(94, 94, 94);
+    font-size: 1.2em;
+    font-family: inherit;
+    font-weight: lighter;
+}
+.blog-post-header h3 {
+    text-transform: none;
+    color: rgb(94, 94, 94);
+    font-size: 0.9em;
+    font-family: inherit;
+    font-weight: lighter;
+    /* float: left; */
+}
+#hello {
+    margin-block-start: 0.37em;
+    margin-block-end: 0.37em;
+}
+#subject {
+    
+}
+#right-nav {
+    display: flex;
+    flex-direction: column;
+    height: 100%;
+}
+#right-nav:last-child {
+    margin-left: auto;
+}
+#page-title {
+    display: flex;
+    justify-content: center;
+    font-family: 'Lora', serif;
+    font-size: 50px;
+    text-transform: uppercase;
+}
+
+/* .container {
+    padding-bottom: ;
+} */
+
+#logo, #nav {
+    /* width: fit-content; */
+}
+#logo {
+    float: left;
+}
+
+#nav {
+    padding: 0;
+    margin: 10px;
+}
+
+#nav li{
+    width: fit-content;
+    height: fit-content;
+    display: inline-block;  
+    margin: 5px 10px;
+}
+
+#nav li a {
+    color: #666;
+    text-decoration: none;
+}
+#nav li a:hover {
+    color: black;
+}
+
+#main-profile {
+    margin: 5vh 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+#main-profile h1 {
+    font-size: 7vw;
+    line-height: 7vw;
+}
+
+#social {
+    padding-top: 30px;
+}
+#social ul {
+    list-style: none;
+    margin: 0 -2em 0 1em;
+    text-align: center;
+    display: flex;
+    justify-content: center;
+    padding: 0;
+}
+#social ul li {
+    
+    font-size: .7em;
+    height: 34px;
+    width: 34px;
+    line-height: 24px;
+    /* background: black; */
+    text-align: center;
+    border-radius: 17px;
+    font-size: 20px;
+}
+
+#social li {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: 5px;
+    /* margin-right: 30px; */
+}
+
+#social ul li a{
+    color: black;
+}
+
+#intro {
+    margin-right: 16px;
+}
+#recent-blog-title {
+    font-family: inherit;
+    color: black;
+}
+#john-jack-img {
+    margin-left: 1em;
+    margin-right: -2em;
+    border-radius: 50%;
+    /* width: 100%; */
+    
+}
+#john-jack-profile img{
+    width: 25vw;
+    /* box-shadow: 5px 10px rgba(1, 15, 48, 0.596); */
+    -webkit-box-shadow: 0px 0px 2px 3px #1a83e670;
+    -moz-box-shadow: 0px 0px 2px 3px #1a83e670;
+    box-shadow: 0px 0px 2px 3px #1a83e670;  
+}
+#blog-container {
+    margin: 40px 25vw;
+}
+
+@media only screen and (max-width: 425px) {
+    .nav-menu ul{
+        display: none;
+    }
+    /* #main-profile h1 {
+        font-size: 66px;
+        line-height: 66px;
+    } */
+  }
+
+  /* @media only screen and (max-width: 710px) {
+    body {
+        background: linear-gradient(to top, white, rgba(255, 255, 255, 0.8)), url(../img/imad-blur.psd.png);
+        background-size: cover;
+        background-position-y: bottom;
+        background-position-x: center;
+        background-repeat: no-repeat;
+    }
+    #john-jack-profile {
+        display: none;
+    }
+    
+  } */
+
+  @media only screen and (max-width: 870px) {
+    /* #main-profile h1 {
+        font-size: 75px;
+        line-height: 75px;
+    } */
+    
+  }
