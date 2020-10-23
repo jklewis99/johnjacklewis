@@ -2,7 +2,6 @@
 title: Home
 type: home
 layout: default
-permalink: /intro/
 ---
 <div class="container">
     <div class="row" id="main-profile">
