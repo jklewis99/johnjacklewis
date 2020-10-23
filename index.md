@@ -2,6 +2,7 @@
 title: Home
 type: home
 layout: default
+permalink: /intro/
 ---
 <div class="container">
     <div class="row" id="main-profile">
@@ -12,7 +13,7 @@ layout: default
         </div>
         <div class="one-half column">
             <div id="john-jack-profile">
-                <img id="john-jack-img" alt="Picture of John Jack Lewis" src="assets/images/john-jack.png">
+                <img id="john-jack-img" alt="Picture of John Jack Lewis" src="{{site.baseurl}}/assets/images/john-jack.png">
             </div>
             <div id="social">
                 <ul>
