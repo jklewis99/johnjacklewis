@@ -3,47 +3,49 @@ body {
     margin: 0;
 }
 
-
-/* p, h2, ul {
-    grid-column: 3 / 7;
-} */
 ul {
     list-style-type: none;
+    padding-inline-start: 0;
 }
 footer {
-    /* grid-column: 1 / 9; */
     background: linear-gradient( rgb(0, 0, 0), rgb(76, 77, 82));
     padding: 2em 0;
     color: white;
     text-align: center;
-    display: block;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
     /* line-height: 2em; */
     font-size: larger;
 }
 footer ul {
-    width: 25%;
+    max-width: 710px;
+    margin: 0;
     display: flex;
     flex-direction: row;
     justify-content: space-evenly;
+    align-items: center;
 }
+
 footer ul li a{
     color: white;
 }
 
 footer img {
-    margin-left: 6vw;
-    float: left;
+    /* margin-left: 6vw; */
+    /* float: left; */
     height: 9vh;
-    max-height: 100%;
+    /* max-height: 100%; */
+    vertical-align: center;
 }
 h2 {
-    font-family: sans-serif;
     text-transform: uppercase;
 }
 .container {
     margin: 0 19vw;
+    min-height: 55vh;
 }
-
 
 .older-posts-section {
     background: black;
@@ -76,10 +78,6 @@ h2 {
     max-height: 250px;
     padding: 10px;
 }
-.older-posts h2, ul{
-    /* grid-column: 2/8; */
-
-}
 
 .prevent-overflow {
     line-height: normal;
@@ -97,7 +95,6 @@ h2 {
     grid-column: 2 / 4;
 } */
 .blog-preview-title {
-    font-family: sans-serif;
     font-size: 2.5vw;
     line-height: 1;
     color: white;
@@ -112,7 +109,7 @@ h2 {
 }
 .blog-preview-link {
     display: inline-block;
-    align-self: center;
+    /* align-self: center; */
     padding: 0.5em 1.5em;
     text-align: center;
     font-family: sans-serif;
@@ -128,16 +125,19 @@ h2 {
 }
 
 .nav-bar {
-    height: 150px;
+    height: 200px;
     display: flex;
     align-content: center;
     justify-content: center;
     margin: 0 50px;
     padding: 10px;
 }
+/* /* .nav-menu #logo {
+    max-height: 100%;
+} */
 .nav-menu #logo img {
-    width: 150px;
-}
+    width: 180px;
+} 
 
 .nav-menu {
     width: 600px;
@@ -192,9 +192,13 @@ h2 {
     text-transform: uppercase;
 }
 
-/* .container {
-    padding-bottom: ;
-} */
+#footer-ul li {
+    padding: 2vw 2vw;
+}
+
+#blog-link {
+    display: none;
+}
 
 #logo, #nav {
     /* width: fit-content; */
@@ -238,15 +242,21 @@ h2 {
 #social {
     padding-top: 30px;
 }
+#social-row {
+    display: none;
+    margin: 30px 0;
+}
 #social ul {
-    list-style: none;
     margin: 0 -2em 0 1em;
+}
+#social ul, #social-row ul {
+    list-style: none;
     text-align: center;
     display: flex;
     justify-content: center;
     padding: 0;
 }
-#social ul li {
+#social ul li, #social-row ul li {
     
     font-size: .7em;
     height: 34px;
@@ -258,7 +268,7 @@ h2 {
     font-size: 20px;
 }
 
-#social li {
+#social li, #social-row li {
     display: flex;
     justify-content: center;
     align-items: center;
@@ -266,7 +276,7 @@ h2 {
     /* margin-right: 30px; */
 }
 
-#social ul li a{
+#social ul li a, #social-row ul li a{
     color: black;
 }
 
@@ -303,21 +313,63 @@ h2 {
         font-size: 66px;
         line-height: 66px;
     } */
-  }
+}
 
-  /* @media only screen and (max-width: 710px) {
-    body {
-        background: linear-gradient(to top, white, rgba(255, 255, 255, 0.8)), url(../img/imad-blur.psd.png);
-        background-size: cover;
-        background-position-y: bottom;
-        background-position-x: center;
-        background-repeat: no-repeat;
+@media only screen and (max-width: 710px) {
+    .older-posts-grid {
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;  
+    }
+    .older-posts-grid li {
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;  
+    }
+    .blogs {
+        width: 90%;
+        max-width: 100%;
+    }
+    .blog-preview-title {
+        font-size: 1.75em;
+    }
+    .nav-menu #logo img {
+        width: 100px;
+    } 
+    #intro-container, #blog-container {
+        margin: 10px 10vw 50px 10vw;
     }
     #john-jack-profile {
         display: none;
     }
-    
-  } */
+    #main-prolie {
+        display: block;
+        flex-direction: column;
+    }
+    #social-row {
+        display: flex;
+        justify-content: center;
+    }
+    #social-row ul{
+        margin: 0;
+    }
+    #nav {
+        display: none;
+    }
+    #right-nav {
+        justify-content: center;
+        margin-right: auto;
+    }
+    #social {
+        display: none;
+    }
+    #intro {
+        margin-right: 0;
+    }
+    #blog-link {
+        display: flex;
+    }
+}
 
   @media only screen and (max-width: 870px) {
     /* #main-profile h1 {

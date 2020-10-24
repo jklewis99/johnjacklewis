@@ -1,37 +1,5 @@
-<!DOCTYPE html>
-<html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <!-- <meta name="viewport" content="width=device-width, initial-scale=1.0"> -->
-    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">	
-    <link href="https://fonts.googleapis.com/css2?family=Lora:ital,wght@0,500;0,700;1,600;1,700&display=swap" rel="stylesheet">
-    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.6.3/css/all.css" integrity="sha384-UHRtZLI+pbxtHCWp1t77Bi1L4ZtiqrqD80Kn4Z8NTSRyMA2Fd33n5dQ8lWUE00s/" crossorigin="anonymous">
-    <link rel="stylesheet" href=/assets/css/main.css>
-    <link rel="shortcut icon" type="image/x-icon" href="/assets/images/logo-11.png" />
-    <title>John Jack Lewis</title>
-</head>
-<body>
-    <div class="nav-bar" >
-        <div class="nav-menu">
-            <div id="logo">
-                <a href=/>
-                <img src="/assets/images/logo-11.png" alt="John Jack Lewis"> 
-                </a>
-            </div>
-            <div id="right-nav">
-                <ul id="nav">
-                    <li><a href=/blog/>Blog</a></li>
-                    <!-- <li><a href="https://github.com/jklewis99">Portfolio</a></li> -->
-                    <li><a href=/resume/>Resume</a></li>
-                    <li><a href="mailto:jklewis99@gmail.com">Contact</a></li>
-                </ul>
-                <div id="page-title">
-                    home
-                </div>
-            </div>
-        </div>
-    </div>
-    <div class="container" id="intro-container">
+I"×
+<div class="container" id="intro-container">
     <div class="row" id="main-profile">
         <div class="one-half column" id="type">
             <h1 id="hello">Hello! I'm John Jack</h1>
@@ -65,22 +33,4 @@
         </div>
     </div>
 </div>
-
-    <footer>
-        <ul id="footer-ul">
-            <li><a href="mailto:jklewis99@gmail.com"><i class="fas fa-envelope"></i></a></li>
-            <li><a href="https://www.linkedin.com/in/johnjacklewis/"><i class="fab fa-linkedin fa-lg"></i></a></li>
-            <li><a href=/index.html>
-                <img src="/assets/images/logo-11.png" alt="John Jack Lewis"> 
-                </a>
-            </li>
-            <li><a href="https://www.github.com/jklewis99/"><i class="fab fa-github"></i></a></li>
-            <li><a href="https://youtu.be/BitpKY6JBSw"><i class="fab fa-youtube"></i></a></li>
-        </ul>
-        <ul id="blog-link">
-            <li><a href=/blog/>Blog</a></li>
-            <li><a href=/resume/>Resume</a></li>
-        </ul>
-    </footer>
-</body>
-</html>
+:ET

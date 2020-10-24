@@ -1,8 +1,8 @@
 ---
 title: Blog
 type: blog
-layout: home
+layout: blogroot
 permalink: /blog/
 ---
 
-# My most recent blog:
+# Most Recent:
