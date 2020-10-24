@@ -18,6 +18,7 @@ footer {
     align-items: center;
     /* line-height: 2em; */
     font-size: larger;
+    align-self: baseline;
 }
 footer ul {
     max-width: 710px;
@@ -44,7 +45,7 @@ h2 {
 }
 .container {
     margin: 0 19vw;
-    min-height: 55vh;
+    min-height: 61vh;
 }
 
 .older-posts-section {
@@ -368,6 +369,7 @@ h2 {
     }
     #blog-link {
         display: flex;
+        flex-direction: column;
     }
 }
 
