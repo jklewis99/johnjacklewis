@@ -3,10 +3,20 @@ body {
     margin: 0;
 }
 
+
+* {
+    -webkit-box-sizing: border-box;
+}
+
 ul {
     list-style-type: none;
     padding-inline-start: 0;
 }
+
+img {
+    vertical-align: middle;
+}
+
 footer {
     background: linear-gradient( rgb(0, 0, 0), rgb(76, 77, 82));
     padding: 2em 0;
@@ -20,6 +30,7 @@ footer {
     font-size: larger;
     align-self: baseline;
 }
+
 footer ul {
     max-width: 710px;
     margin: 0;
@@ -29,7 +40,7 @@ footer ul {
     align-items: center;
 }
 
-footer ul li a{
+footer ul li a {
     color: white;
 }
 
@@ -40,12 +51,14 @@ footer img {
     /* max-height: 100%; */
     vertical-align: center;
 }
+
 h2 {
     text-transform: uppercase;
 }
+
 .container {
     margin: 0 19vw;
-    min-height: 61vh;
+    min-height: 34vh;
 }
 
 .older-posts-section {
@@ -60,30 +73,32 @@ h2 {
     /* grid-gap: inherit; */
     margin-top: 4em;
 }
+
 .older-posts-grid {
     display: flex;
     flex-direction: row;
     flex-wrap: wrap;
-    max-width: 80%;
     justify-content: space-between;
     padding: 5px 20px;
     width: 80%;
-    max-width: 800px;
+    /* max-width: 800px; */
 }
+
 .blogs {
     display: flex;
     flex-direction: column;
     align-items: flex-start;
-    width: 200px;
-    max-width: 33%;
-    max-height: 250px;
+    width: 250px;
+    max-width: 40%;
     padding: 10px;
+    margin: 6px;
 }
 
 .prevent-overflow {
     line-height: normal;
-    
+    /* align-self: flex-start; */
 }
+
 .post__desc {
     display: -webkit-box;
     max-height: 90px;
@@ -92,22 +107,25 @@ h2 {
     -webkit-box-orient: vertical;
     text-overflow: ellipsis;
 }
+
+
 /* .blog-preview:first-of-type {
     grid-column: 2 / 4;
 } */
+
 .blog-preview-title {
-    font-size: 2.5vw;
+    font-size: 1.5em;
     line-height: 1;
     color: white;
     text-decoration: none;
     text-transform: uppercase;
     transition: opacity ease-out 200ms;
-    max-height: 90px;
-    /* overflow-y: hidden; */
 }
+
 .blog-preview-title:hover {
     opacity: 0.6;
 }
+
 .blog-preview-link {
     display: inline-block;
     /* align-self: center; */
@@ -120,6 +138,7 @@ h2 {
     margin-top: 1em;
     font-size: 1.0em;
 }
+
 .blog-preview-link:hover {
     transition: background ease-out 200ms;
     background: rgba(67, 171, 255, 0.842);
@@ -133,12 +152,15 @@ h2 {
     margin: 0 50px;
     padding: 10px;
 }
+
+
 /* /* .nav-menu #logo {
     max-height: 100%;
 } */
+
 .nav-menu #logo img {
     width: 180px;
-} 
+}
 
 .nav-menu {
     width: 600px;
@@ -146,15 +168,20 @@ h2 {
     display: flex;
     align-items: center;
     flex-direction: row;
+    box-sizing: border-box;
 }
 
 .blog-post-header {
     text-align: center;
     margin: 40px 0;
 }
-.blog-post-header h1, h2, h3{
+
+.blog-post-header h1,
+h2,
+h3 {
     margin: 0;
 }
+
 .blog-post-header h2 {
     text-transform: none;
     color: rgb(94, 94, 94);
@@ -162,6 +189,7 @@ h2 {
     font-family: inherit;
     font-weight: lighter;
 }
+
 .blog-post-header h3 {
     text-transform: none;
     color: rgb(94, 94, 94);
@@ -170,21 +198,24 @@ h2 {
     font-weight: lighter;
     /* float: left; */
 }
+
 #hello {
     margin-block-start: 0.37em;
     margin-block-end: 0.37em;
 }
-#subject {
-    
-}
+
+#subject {}
+
 #right-nav {
     display: flex;
     flex-direction: column;
     height: 100%;
 }
+
 #right-nav:last-child {
     margin-left: auto;
 }
+
 #page-title {
     display: flex;
     justify-content: center;
@@ -201,9 +232,11 @@ h2 {
     display: none;
 }
 
-#logo, #nav {
+#logo,
+#nav {
     /* width: fit-content; */
 }
+
 #logo {
     float: left;
 }
@@ -213,10 +246,10 @@ h2 {
     margin: 10px;
 }
 
-#nav li{
+#nav li {
     width: fit-content;
     height: fit-content;
-    display: inline-block;  
+    display: inline-block;
     margin: 5px 10px;
 }
 
@@ -224,6 +257,7 @@ h2 {
     color: #666;
     text-decoration: none;
 }
+
 #nav li a:hover {
     color: black;
 }
@@ -243,22 +277,27 @@ h2 {
 #social {
     padding-top: 30px;
 }
+
 #social-row {
     display: none;
     margin: 30px 0;
 }
+
 #social ul {
     margin: 0 -2em 0 1em;
 }
-#social ul, #social-row ul {
+
+#social ul,
+#social-row ul {
     list-style: none;
     text-align: center;
     display: flex;
     justify-content: center;
     padding: 0;
 }
-#social ul li, #social-row ul li {
-    
+
+#social ul li,
+#social-row ul li {
     font-size: .7em;
     height: 34px;
     width: 34px;
@@ -269,7 +308,8 @@ h2 {
     font-size: 20px;
 }
 
-#social li, #social-row li {
+#social li,
+#social-row li {
     display: flex;
     justify-content: center;
     align-items: center;
@@ -277,37 +317,43 @@ h2 {
     /* margin-right: 30px; */
 }
 
-#social ul li a, #social-row ul li a{
+#social ul li a,
+#social-row ul li a {
     color: black;
 }
 
 #intro {
     margin-right: 16px;
 }
+
 #recent-blog-title {
     font-family: inherit;
     color: black;
 }
+
 #john-jack-img {
     margin-left: 1em;
     margin-right: -2em;
     border-radius: 50%;
     /* width: 100%; */
-    
 }
-#john-jack-profile img{
+
+#john-jack-profile img {
     width: 25vw;
     /* box-shadow: 5px 10px rgba(1, 15, 48, 0.596); */
     -webkit-box-shadow: 0px 0px 2px 3px #1a83e670;
     -moz-box-shadow: 0px 0px 2px 3px #1a83e670;
-    box-shadow: 0px 0px 2px 3px #1a83e670;  
+    box-shadow: 0px 0px 2px 3px #1a83e670;
 }
+
 #blog-container {
     margin: 40px 25vw;
 }
-
+#intro-container {
+    min-height: 63vh;
+}
 @media only screen and (max-width: 425px) {
-    .nav-menu ul{
+    .nav-menu ul {
         display: none;
     }
     /* #main-profile h1 {
@@ -320,24 +366,30 @@ h2 {
     .older-posts-grid {
         flex-direction: column;
         justify-content: center;
-        align-items: center;  
+        align-items: center;
+        max-width: 95%;
+    }
+    .prevent-overflow {
+        text-align: center;
     }
     .older-posts-grid li {
         flex-direction: column;
         justify-content: center;
-        align-items: center;  
+        align-items: center;
+        width: 100%;
     }
     .blogs {
         width: 90%;
         max-width: 100%;
     }
-    .blog-preview-title {
+    /* .blog-preview-title {
         font-size: 1.75em;
-    }
+    } */
     .nav-menu #logo img {
         width: 100px;
-    } 
-    #intro-container, #blog-container {
+    }
+    #intro-container,
+    #blog-container {
         margin: 10px 10vw 50px 10vw;
     }
     #john-jack-profile {
@@ -351,7 +403,7 @@ h2 {
         display: flex;
         justify-content: center;
     }
-    #social-row ul{
+    #social-row ul {
         margin: 0;
     }
     #nav {
@@ -373,10 +425,9 @@ h2 {
     }
 }
 
-  @media only screen and (max-width: 870px) {
+@media only screen and (max-width: 870px) {
     /* #main-profile h1 {
         font-size: 75px;
         line-height: 75px;
     } */
-    
-  }
+}

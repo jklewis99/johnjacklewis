@@ -2,7 +2,7 @@
 title: Blog
 type: blog
 layout: blogroot
-permalink: /blog/
+# permalink: /blog/
 ---
 
 # Most Recent:

@@ -33,12 +33,19 @@
     </div>
     <div class="container" id="blog-container">
     <div class="blog-post-header">
+        <h1>Welcome!</h1>
+        <h2> An introduction to my website</h2>
+        <h3 id="subject"><b>Subject</b>: miscellaneous</h3>
+        <h3>2 min read</h3>
+        <h3>October 20, 2020</h3>
+    </div> 
+    <!-- <div class="blog-post-header">
 <h1>Welcome!</h1>
 <h2> An introduction to my website</h2>
 <h3 id="subject"><b>Subject</b>: miscellaneous</h3>
 <h3>2 min read</h3>
 <h3>October 20, 2020</h3>
-</div>
+</div>  -->
 <p>Hello visitors!</p>
 
 <p>Thank you for taking the time to visit my new website!</p>
@@ -53,17 +60,31 @@
 
 </div>
 <section class="older-posts-section">
-    <h2>Other Posts</h2>
+    <h2>All Posts</h2>
     <ul class="older-posts-grid">
          <!-- use offset to print only remaining posts (like python [1:]-->
         <li class="blogs">
-            <a class="blog-preview-title" href="/blogs/10-10-2020-welcome/">Welcome!</a>
+            <div class="prevent-overflow">
+                <a class="blog-preview-title" href="/10/27/2020/the-value-of-an-unmodeled-mentor">The Value of an Unmodeled Mentor</a>
+            </div>
+            <div class="prevent-overflow">
+                <p class="post__desc">
+                    You know which mentor is right for you, so why not seek out that exact mentor?
+                </p>
+            </div>
+            <a class="blog-preview-link" href="/10/27/2020/the-value-of-an-unmodeled-mentor">Read More</a>
+        </li>
+         <!-- use offset to print only remaining posts (like python [1:]-->
+        <li class="blogs">
+            <div class="prevent-overflow">
+                <a class="blog-preview-title" href="/10/20/2020/welcome">Welcome!</a>
+            </div>
             <div class="prevent-overflow">
                 <p class="post__desc">
                     An introduction to my website
                 </p>
             </div>
-            <a class="blog-preview-link" href="/blogs/10-10-2020-welcome/">Read More</a>
+            <a class="blog-preview-link" href="/10/20/2020/welcome">Read More</a>
         </li>
           
     </ul>
