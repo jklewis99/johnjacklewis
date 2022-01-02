@@ -1,6 +1,8 @@
 body {
     font-family: 'Lora', serif;
     margin: 0;
+    background-color: #000000 !important;
+    color: white !important; 
 }
 
 
@@ -145,7 +147,7 @@ h2 {
 }
 
 .nav-bar {
-    height: 200px;
+    height: 180px;
     display: flex;
     align-content: center;
     justify-content: center;
@@ -159,7 +161,8 @@ h2 {
 } */
 
 .nav-menu #logo img {
-    width: 180px;
+    width: 100px;
+    height: 100px;
 }
 
 .nav-menu {
@@ -184,7 +187,7 @@ h3 {
 
 .blog-post-header h2 {
     text-transform: none;
-    color: rgb(94, 94, 94);
+    color: #cccccc;
     font-size: 1.2em;
     font-family: inherit;
     font-weight: lighter;
@@ -192,7 +195,7 @@ h3 {
 
 .blog-post-header h3 {
     text-transform: none;
-    color: rgb(94, 94, 94);
+    color: #cccccc;
     font-size: 0.9em;
     font-family: inherit;
     font-weight: lighter;
@@ -232,13 +235,13 @@ h3 {
     display: none;
 }
 
-#logo,
-#nav {
-    /* width: fit-content; */
-}
-
 #logo {
     float: left;
+    padding: 10px;
+}
+#logo img {
+    height: 100px;
+    width: 100px;
 }
 
 #nav {
@@ -254,16 +257,16 @@ h3 {
 }
 
 #nav li a {
-    color: #666;
+    color: #cccccc;
     text-decoration: none;
 }
 
 #nav li a:hover {
-    color: black;
+    color: rgb(255, 255, 255);
 }
 
 #main-profile {
-    margin: 5vh 0;
+    /* margin: 5vh 0; */
     display: flex;
     justify-content: center;
     align-items: center;
@@ -328,13 +331,13 @@ h3 {
 
 #recent-blog-title {
     font-family: inherit;
-    color: black;
 }
 
 #john-jack-img {
     margin-left: 1em;
     margin-right: -2em;
     border-radius: 50%;
+    /* box-shadow: ; */
     /* width: 100%; */
 }
 
